@@ -1,122 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title> Layoud con float </title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width">
+	<style>
+		* {
+			box-sizing: border-box
+		}
 
-    <head> 
-        <meta charset="UTF-8">
-        <title> Layoud con fload </title>
-       <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-            <meta name="viewport" content="width=device-width">
-        <style>
-            *{
-                box-sizing: border-box
-            }
-            body{
-                background:green;
-                margin: 0 0 100px;
-                padding: 0;
-                font-family: 'Montserrat';
-            }
-            header,section,nav,article,footer{
-                                    padding: 15px;
-                                    margin:15px;
-                                    display: block;
-            }
-             header{
-                background:gray;
-                 text-align: center;
-                 color: white
-            }
-             nav{
-                 background: pink;
-            }
-             section{
-                background:yellow;
-            }
-            
-            .contenedor{
-              display: block;
-            }
-             article{
-                background:pink;
-              
-            }
-            footer{
-                background:purple;
-                text-align: center;
-                height: 70px;
-                width: 100%;
-                margin: 0;
-            }
-            .clearfix{
-                overflow:auto;
-            }
-            .after-box{
-                clear: both;
-            }
-            
-            @media screen and (min-witdth:768px) {
-                /*aqui inician los estilos de tablet*/
-                nav{
-                    float:left;
-                    width:30%;
-                }
-                .contenedor{
-                    float:left;
-                    width: 65%;
-                        
-                }
-                 /*aqui terminan los estilos de tablet*/
-            }
-                
-             @media screen and (min-witdth:1024px) {
-                /*aqui inician los estilos de laptop*/
-                 .contenedor{
-                    width: 66%;
-                       }
-                 h1 {
-                         font-size: 48px;
-                     }
-                 /*aqui terminan los estilos de laptop*/
-            }
-                
-        </style>
-    </head>
+		body {
+			background: green;
+			margin: 0;
+			padding: 0;
+			font-family: 'Montserrat';
+		}
+
+		header,
+		section,
+		nav,
+		article,
+		footer {
+			padding: 15px;
+			margin: 15px;
+			display: block;
+		}
+
+		header {
+			background: gray;
+			text-align: center;
+			color: white
+		}
+
+		nav {
+			background: pink;
+		}
+
+		section {
+			background: yellow;
+		}
+
+		.contenedor {
+			display: block;
+		}
+
+		article {
+			background: pink;
+
+		}
+
+		footer {
+			background: purple;
+			text-align: center;
+			height: 70px;
+			width: 100%;
+			margin: 0;
+		}
+
+		.clearfix {
+			overflow: auto;
+		}
+
+		.after-box {
+			clear: both;
+		}
+
+		@media screen and (min-width:768px) {
+
+			/*aqui inician los estilos de tablet*/
+			nav {
+				float: left;
+				width: 30%;
+			}
+
+			.contenedor {
+				float: left;
+				width: 65%;
+
+			}
+
+			/*aqui terminan los estilos de tablet*/
+		}
+
+		@media screen and (min-width:1024px) {
+
+			/*aqui inician los estilos de laptop*/
+			.contenedor {
+				width: 66%;
+			}
+
+			h1 {
+				font-size: 48px;
+			}
+
+			/*aqui terminan los estilos de laptop*/
+		}
+
+	</style>
+</head>
 <header>
-    <h1>Estructura con posición fload</h1>
-    </header>
-    <section class="clearfix">
-        <nav> 
-            <ul>
-            <li> Inicio </li>
-              <li> Nosotros </li>
-              <li> Servicios </li>
-              <li> Contacto </li>
-            </ul>
-        </nav>
-        <div class="contenedor">
-           <article>
-               <h2>Articulo 1</h2>
-               <p>1914 translation by H. Rackham
-"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+	<h1>Estructura con posición float</h1>
+</header>
+<section class="clearfix">
+	<nav>
+		<ul>
+			<li> Inicio </li>
+			<li> Nosotros </li>
+			<li> Servicios </li>
+			<li> Contacto </li>
+		</ul>
+	</nav>
+	<div class="contenedor">
+		<article>
+			<h2>Articulo 1</h2>
+			<p>1914 translation by H. Rackham
+				"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
 
-</p>
-        </article>
-           <article>
-               <h2>Articulo 2</h2>
-               <p> Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-               </p>
-        
-        </article>
-           <article>
-        <h2>Articulo 3</h2>
-               <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
-               </p>
-        </article>
-</div>
-             </section>
+			</p>
+		</article>
+		<article>
+			<h2>Articulo 2</h2>
+			<p> Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+				"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+			</p>
+
+		</article>
+		<article>
+			<h2>Articulo 3</h2>
+			<p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+			</p>
+		</article>
+	</div>
+</section>
 <footer class="after-box">
-    © 2020 Todos los derechos recervados
-    </footer>
-</html>   
-           
+	© 2020 Todos los derechos recervados
+</footer>
+
+</html>
